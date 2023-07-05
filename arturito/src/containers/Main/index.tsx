@@ -1,9 +1,10 @@
 import { Switch, Route, useLocation } from 'react-router-dom';
-import Starships from '../../components/StarshipsSection';
 import { paths } from '../paths';
 import SectionSelector from '../../components/SectionSelector';
 import Home from '../../components/HomeSection';
 import Planets from '../../components/PlanetsSection';
+import Starships from '../../components/StarshipsSection';
+import People from '../../components/People';
 import Species from '../../components/Species';
 
 const MainContainer = () => {
@@ -34,7 +35,7 @@ const MainContainer = () => {
         </Route>
 
         <Route path={paths.people.href}>
-          <Starships />
+          <People />
         </Route>
 
         <Route path={paths.species.href}>

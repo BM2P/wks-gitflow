@@ -36,7 +36,7 @@ const columns = [
 ];
 
 const Species = () => {
-  const { data, error } = useSWR('/planets', swGet);
+  const { data, error } = useSWR('/species', swGet);
 
   if (error) {
     return <div className="px-2">Oh oh!</div>;
